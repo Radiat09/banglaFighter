@@ -5,55 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class Five (Use of CSS)</title>
     <style>
-      .parent {
-        padding: 100px;
-        margin: 50px;
-        background-color: antiquewhite;
-        border-radius: 8px;
-      }
-      .container {
+      body {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        gap: 60px;
+        margin-top: 80px;
       }
-      .address {
-        width: 100%;
-      }
-      .textarea {
-        width: 96%;
-      }
-      .textarea2 {
-        width: 100%;
-      }
-      .spaceY {
-        margin-bottom: 18px;
-      }
-      label {
-        font-size: 18px;
-        font-weight: 600;
-        color: darkslateblue;
-      }
-      label::after {
-        content: ":";
-      }
-      input {
-        padding: 8px;
-        border-radius: 8px;
-        border: 0;
-      }
-      select {
-        padding: 8px;
-        width: 100%;
-        min-width: 180px;
-        border: 0;
-      }
-      #sem {
-        margin-left: 40px;
+      .parentContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
       }
     </style>
   </head>
   <body>
-    <div class="parent">
+    <h1>রেজিস্ট্রেশন করুন</h1>
+    <div class="parentContainer">
       <div class="container spaceY">
         <div>
           <label for="name">Name</label><br />
