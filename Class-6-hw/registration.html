@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>রেজিস্ট্রেশন করুন</h2>
+      <form class="registration-form">
+        <!-- First group -->
+        <div class="grid-col-3">
+          <div class="form-group">
+            <label class="reqired" for="name">Name </label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label class="reqired" for="mobile">Mobile </label>
+            <input type="text" id="mobile" name="mobile" required />
+          </div>
+          <div class="form-group">
+            <label class="reqired" for="password">Password </label>
+            <input type="password" id="password" name="password" required />
+          </div>
+        </div>
+        <!-- First group END -->
+
+        <!-- Second group -->
+        <div class="grid-col-3">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="emergency-contact">Emergency Contact</label>
+            <input
+              type="text"
+              id="emergency-contact"
+              name="emergency-contact"
+            />
+          </div>
+          <div class="form-group">
+            <label class="reqired" for="home-district">Home District </label>
+            <select id="home-district" name="home-district" required>
+              <option selected disabled value="">Select</option>
+              <option value="Rangpur">Rangpur</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Palestine">Palestine</option>
+              <!-- Add options here -->
+            </select>
+          </div>
+        </div>
+        <!-- Second group END-->
+        <!-- Third group-->
+        <div class="flex">
+          <div class="form-group w-full">
+            <label for="study-in">Study In (Diploma Engineering)</label>
+            <input type="text" id="study-in" name="study-in" />
+          </div>
+          <div class="form-group w-full">
+            <label for="institute-name">Institute Name</label>
+            <input type="text" id="institute-name" name="institute-name" />
+          </div>
+        </div>
+        <!-- Third group END-->
+        <!-- Forth group -->
+        <div class="grid-col-3">
+          <div class="form-group">
+            <label for="technology">Technology</label>
+            <select id="technology" name="technology">
+              <option disabled selected value="Technology">Technology</option>
+              <option value="Computer">Computer</option>
+              <option value="Civil">Civil</option>
+              <option value="Food">Food</option>
+              <!-- Add options here -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="semester">Semester (8th)</label>
+            <input type="text" id="semester" name="semester" />
+          </div>
+          <div class="form-group">
+            <label for="shift">Shift</label>
+            <select id="shift" name="shift">
+              <option disabled selected value="shift">Shift</option>
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <!-- Add options here -->
+            </select>
+          </div>
+        </div>
+        <!-- Forth group END-->
+        <!-- Fifth group -->
+        <div class="flex">
+          <div class="form-group w-full">
+            <label for="present-address">Present Address</label>
+            <textarea id="present-address" name="present-address"></textarea>
+          </div>
+          <div class="form-group w-full">
+            <label for="permanent-address">Permanent Address</label>
+            <textarea
+              id="permanent-address"
+              name="permanent-address"
+            ></textarea>
+          </div>
+        </div>
+        <!-- Fifth group END-->
+        <!-- sixth group -->
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <textarea id="comment" name="comment"></textarea>
+        </div>
+        <!-- sixth group END-->
+        <div class="form-buttons">
+          <button type="submit" class="register-btn">রেজিস্ট্রেশন</button>
+          <button type="button" class="login-btn">লগ ইন</button>
+        </div>
+        <div class="password-reset">
+          <span>পাসওয়ার্ড ভুলে গেছেন?</span> <a href="#"> রিসেট পাসওয়ার্ড</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

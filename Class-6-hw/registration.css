@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #004d40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  background-color: #f8f9fc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+/* Utils */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.w-full {
+  width: 100%;
+}
+/* Utils */
+h2 {
+  text-align: center;
+  color: #004d40;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #636e86;
+  font-weight: 500;
+}
+
+.reqired::before {
+  content: "*";
+  color: red;
+  margin-right: 4px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border: none;
+  outline: 4px solid rgb(183, 224, 240);
+}
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+select {
+  font-size: 16px;
+}
+select option {
+  padding: 8px;
+  font-size: 16px;
+}
+select option[selected] {
+  font-size: 16px;
+  color: #cccccc;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.register-btn,
+.login-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.register-btn {
+  background-color: #2c7be5;
+}
+
+.login-btn {
+  background-color: #748194;
+}
+.register-btn,
+.login-btn {
+  font-size: 18px;
+}
+.password-reset {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.password-reset a {
+  color: #2c7be5;
+  text-decoration: none;
+}
+.password-reset span {
+  color: #748194;
+  text-decoration: none;
+}
+
+.password-reset a:hover {
+  text-decoration: underline;
+}
